@@ -10,7 +10,7 @@ export default function OrderForm(props) {
     const [orderItem, setOrderItem] = useState("");
     const [quantity, setQuantity] = useState("1");
 
-    const menuItemChosen = (event) => setOrderItem(event.value);
+    const menuItemChosen = (event) => setOrderItem(event.target.value);
     const menuQuantityChosen = (event) => setQuantity(event.value);
 
     const auth = useSelector((state) => state.auth);
@@ -38,8 +38,8 @@ export default function OrderForm(props) {
             <div className="form-wrapper">
                 <form>
                     <label className="form-label">I'd like to order...</label><br />
-                    <select 
-                        value={orderItem} 
+                    <select
+                        value={orderItem}
                         onChange={(event) => menuItemChosen(event)}
                         className="menu-select"
                     >
