@@ -56,7 +56,7 @@ describe('Orders List', () => {
 
     });
 
-    test('verify time formating', () => {
+    test('verify time formatting', () => {
         const orders = [
             {
                 createdAt: "2022-04-17T21:09:05.048Z",
