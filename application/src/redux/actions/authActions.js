@@ -1,6 +1,7 @@
 import { LOGIN, LOGOUT } from './types';
 import { SERVER_IP } from '../../private'
 
+
 const finishLogin = (email, token) => {
     return {
         type: LOGIN,
